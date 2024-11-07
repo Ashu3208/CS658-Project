@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Website Nature Detection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #result {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            display: none;
+        }
+        .model-result {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Enter the URL of the Website</h1>
+    <form id="urlForm">
+        <label for="url">Website URL:</label>
+        <input type="text" id="url" name="url" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Section to display the prediction results -->
+    <div id="result">
+        <h3>Prediction Results:</h3>
+        <div id="modelResults"></div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

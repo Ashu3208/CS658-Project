@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "My Flask Chrome Extension",
+    "version": "1.0",
+    "description": "A Chrome extension that interfaces with my Flask app.",
+    "host_permissions": [
+        "http://localhost:5000/*"
+    ],
+    "action":{
+        "default_popup": "templates/index.html",
+        "default_title": "Latest Covid Report"
+    }
+  }
+  
